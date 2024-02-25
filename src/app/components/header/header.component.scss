@@ -1,0 +1,13 @@
+:root{
+  --h-pane-header: 59px;
+}
+
+
+.panel-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 10px 16px;
+  height: var(--h-pane-header);
+  background: var(--panel-header-background);;
+}
