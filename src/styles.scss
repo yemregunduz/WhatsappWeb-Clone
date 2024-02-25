@@ -1,1 +1,153 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --app-background: #eae6df;
+  --app-background-rgb: 234, 230, 223;
+  --app-background-deeper: #d1d7db;
+  --app-background-deeper-rgb: 209, 215, 219;
+  --shadow-rgb:11,20,26;
+
+  --background-default-active: #f0f2f5;
+  --background-default-active-rgb: 240, 242, 245;
+
+  --primary-strong: #111b21;
+  --secondary: #667781;
+
+  --black-rgb: 11, 20, 26;
+  --white-rgb: 255, 255, 255;
+  --WDS-warm-gray-200: #dbd8d4;
+  --WDS-app-wash: var(--WDS-warm-gray-200);
+  --border-stronger: #e9edef;
+  --intro-background: #f0f2f5;
+  --intro-background-rgb: 240, 242, 245;
+  --intro-border: #25d366;
+  --intro-border-rgb: 37, 211, 102;
+  --intro-logo: rgba(78, 100, 112, 0.4);
+  --intro-logo-rgb: 78, 100, 112;
+  --intro-secondary: #667781;
+  --intro-secondary-rgb: 102, 119, 129;
+  --radius-thumb: 6px;
+  --button-primary: #fff;
+  --button-primary-rgb: 255, 255, 255;
+  --button-primary-background: #008069;
+  --button-primary-background-rgb: 0, 128, 105;
+  --button-primary-background-hover: #017561;
+  --button-primary-background-hover-rgb: 1, 117, 97;
+  --button-round-background: #00a884;
+  --button-round-background-rgb: 0, 168, 132;
+  --button-round-background-inverted: #f3f5f6;
+  --button-round-background-inverted-rgb: 243, 245, 246;
+  --button-round-icon-inverted: #00a884;
+  --button-round-icon-inverted-rgb: 0, 168, 132;
+  --button-disabled: #aebac1;
+  --button-disabled-rgb: 174, 186, 193;
+  --button-secondary: #008069;
+  --button-secondary-rgb: 0, 128, 105;
+  --button-secondary-border: #e9edef;
+  --button-secondary-border-rgb: 233, 237, 239;
+  --button-secondary-background: #fff;
+  --button-secondary-background-rgb: 255, 255, 255;
+  --button-secondary-background-hover: #fff;
+  --button-secondary-background-hover-rgb: 255, 255, 255;
+  --button-secondary-hover: #017561;
+  --button-secondary-hover-rgb: 1, 117, 97;
+  --button-secondary-disabled-background: #fff;
+  --button-secondary-disabled-background-rgb: 255, 255, 255;
+  --button-primary-destructive-color: #fff;
+  --button-primary-destructive-color-rgb: 255, 255, 255;
+  --button-primary-destructive-background: #ea0038;
+  --button-primary-destructive-background-rgb: 234, 0, 56;
+  --button-primary-destructive-background-hover: #ea0038;
+  --button-primary-destructive-background-hover-rgb: 234, 0, 56;
+  --button-primary-destructive-outline: #f15c6d;
+  --button-primary-destructive-outline-rgb: 241, 92, 109;
+  --button-primary-destructive-spinner-color: #fff;
+  --button-primary-destructive-spinner-color-rgb: 255, 255, 255;
+  --button-secondary-destructive-color: #ea0038;
+  --button-secondary-destructive-color-rgb: 234, 0, 56;
+  --button-secondary-destructive-hover-color: #ea0038;
+  --button-secondary-destructive-hover-color-rgb: 234, 0, 56;
+  --button-secondary-destructive-outline: #f15c6d;
+  --button-secondary-destructive-outline-rgb: 241, 92, 109;
+  --button-secondary-destructive-spinner-color: #ea0038;
+  --button-secondary-destructive-spinner-color-rgb: 234, 0, 56;
+  --button-focus: #fff;
+  --button-focus-rgb: 255, 255, 255;
+  --button-focus-outline: #00a884;
+  --button-focus-outline-rgb: 0, 168, 132;
+  --button-approve: #008069;
+  --button-approve-rgb: 0, 128, 105;
+  --button-approve-background: #e1fef2;
+  --button-approve-background-rgb: 225, 254, 242;
+  --button-approve-hover: #008069;
+  --button-approve-hover-rgb: 0, 128, 105;
+  --button-approve-background-hover: #b2f5da;
+  --button-approve-background-hover-rgb: 178, 245, 218;
+  --button-approve-hover-strong: #008069;
+  --button-approve-hover-strong-rgb: 0, 128, 105;
+  --button-approve-background-hover-strong: #7ae3c3;
+  --button-approve-background-hover-strong-rgb: 122, 227, 195;
+  --button-reject: #8696a0;
+  --button-reject-rgb: 134, 150, 160;
+  --button-reject-background: #f0f2f5;
+  --button-reject-background-rgb: 240, 242, 245;
+  --button-reject-hover: #54656f;
+  --button-reject-hover-rgb: 84, 101, 111;
+  --button-reject-background-hover: #d1d7db;
+  --button-reject-background-hover-rgb: 209, 215, 219;
+  --button-reject-hover-strong: #3b4a54;
+  --button-reject-hover-strong-rgb: 59, 74, 84;
+  --button-reject-background-hover-strong: #aebac1;
+  --button-reject-background-hover-strong-rgb: 174, 186, 193;
+  --panel-header-background: #f0f2f5;
+  --panel-header-background-rgb: 240, 242, 245;
+  --dimmed: 0.5;
+  --layer-0: -1;
+  --layer-1: 100;
+  --layer-2: 200;
+  --layer-3: 300;
+  --layer-4: 400;
+  --layer-5: 500;
+  --layer-6: 600;
+  --layer-7: 700;
+  --layer-8: 800;
+  --layer-9: 900;
+  --layer-10: 1000;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: rgba(var(--black-rgb), .2) rgba(var(--white-rgb), .1);
+  scrollbar-width: thin;
+}
+
+html,
+body,
+.app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+  scrollbar-width: thin;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  background-color: var(--WDS-app-wash, var(--app-background));
+  background-image: linear-gradient(180deg, var(--WDS-app-wash, var(--app-background)), var(--WDS-app-wash, var(--app-background-deeper)));
+}
+
+.light-theme {
+  scrollbar-color: rgba(var(--black-rgb), .2) rgba(var(--white-rgb), .1);
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
