@@ -1,4 +1,4 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
 import { Conversation } from '../conversation-list.component';
 
 @Component({
@@ -8,6 +8,7 @@ import { Conversation } from '../conversation-list.component';
   templateUrl: './conversation-item.component.html',
   styleUrl: './conversation-item.component.scss',
   changeDetection:ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None
 
 })
 export class ConversationItemComponent {

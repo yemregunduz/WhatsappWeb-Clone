@@ -8,6 +8,7 @@ import { RouterLink } from '@angular/router';
   imports: [ConversationItemComponent,RouterLink],
   templateUrl: './conversation-list.component.html',
   styleUrl: './conversation-list.component.scss',
+
 })
 export class ConversationListComponent {
   conversations: Conversation[] = [

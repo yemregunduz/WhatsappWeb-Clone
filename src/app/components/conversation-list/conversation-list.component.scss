@@ -9,5 +9,13 @@
   flex-direction: column;
   flex-grow: 1;
   overflow-y: auto;
-  gap: 10px;
+}
+
+.conversation-list{
+  &::ng-deep:not(:first-child){
+    .conversation-item{
+      border-top: 1px solid var(--secondary-border);
+    }
+  }
+
 }
