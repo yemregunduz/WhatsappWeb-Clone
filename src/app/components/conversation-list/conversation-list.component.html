@@ -1,0 +1,6 @@
+
+<div class="conversation-list">
+  @for (conversation of conversations; track conversation.id) {
+    <wp-conversation-item [conversation]="conversation" routerLink="/conversation-details/{{conversation.id}}"></wp-conversation-item>
+  }
+</div>

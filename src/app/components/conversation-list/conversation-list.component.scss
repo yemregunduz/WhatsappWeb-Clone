@@ -1,0 +1,13 @@
+
+:host{
+  background-color: rgb(var(--white-rgb));
+  height: 100%;
+  display:flex;
+}
+.conversation-list{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  gap: 10px;
+}
